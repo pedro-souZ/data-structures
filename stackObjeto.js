@@ -71,3 +71,6 @@ stack.push(10);
 console.log(stack.size());
 stack.clear();
 console.log(stack.isEmpty());
+
+//as propriedades items e count declaradas na classe Stack não estão protegidas, e esse comportamento tem haver de como as classes funcionam em JavaScript.
+// underscore para marcar um atributo como private, mas não garante nada/não protege, usar o WeakMap/# ???
