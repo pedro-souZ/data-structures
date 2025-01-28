@@ -20,10 +20,10 @@ class Queue {
     if (this.isEmpty()) {
       return undefined;
     }
-    const result = this.items[this.lowestCount]; // armazena o valor da frente da fila
-    delete this.items[this.lowestCount]; // deleta o elemento
-    this.lowestCount++; // incrementa mais 1 que será o próximo a ser deletado
-    return result;
+    const result = this.items[this.lowestCount]; // armazena o valor da frente da fila / recebe o valor que esta em lowestCount
+    delete this.items[this.lowestCount]; // deleta o elemento na posição indicada/ indice lowestCount
+    this.lowestCount++; // incrementa mais 1 que será o próximo indice
+    return result; // retorna o item que foi removido da fila
   }
 
   // olhando elemento que esta na frente da fila
